@@ -8,8 +8,8 @@
   <remote  name="cm"
            fetch="https://github.com" />
 
-  <remote  name="chevy"
-           fetch="https://github.com/ChevyCam94"
+  <remote  name="cortex"
+           fetch="https://github.com/CortexROM"
            revision="marshmallow" />
 
   <remote  name="github"
@@ -21,17 +21,17 @@
            sync-j="3" />
 
 <!-- ChevyCam94 -->
-  <project path="build" name="platform_build" remote="chevy">
+  <project path="build" name="build" remote="cortex">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="art" name="platform_art" remote="chevy" />
-  <project path="manifest" name="platform_manifest" remote="chevy" />
-  <project name="platform_device_huawei_angler" path="device/huawei/angler" remote="chevy" />
-  <project name="platform_vendor_huawei_angler" path="vendor/huawei/angler" remote="chevy" />
-  <project name="platform_kernel_huawei_angler" path="kernel/huawei/angler" remote="chevy" revision="cm-13.0" />
-  <project path="vendor/cm" name="platform_vendor_cm" remote="chevy" />
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="chevy" revision="cm-13.0" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="chevy" revision="cm-13.0" />
+  <project path="art" name="art" remote="cortex" />
+  <project path="manifest" name="manifest" remote="cortex" />
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="cortex" />
+  <project path="vendor/huawei/angler" name="vendor_huawei_angler" remote="cortex" />
+  <project path="kernel/huawei/angler" name="kernel_huawei_angler" remote="cortex"/>
+  <project path="vendor/cm" name="vendor_cm" remote="cortex" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cortex" />
+  <project path="frameworks/base" name="frameworks_base" remote="cortex" />
 
 <!-- BEGIN CYANOGENMOD -->
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
