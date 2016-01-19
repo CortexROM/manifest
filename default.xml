@@ -288,7 +288,6 @@
 <!-- BEGIN AOSP -->
   <project path="cts" name="platform/cts" revision="marshmallow-cts-release" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" remote="aosp" />
-  <project path="developers/build" name="platform/developers/build" remote="aosp" />
   <project path="device/generic/qemu" name="device/generic/qemu" remote="aosp" />
   <project path="device/generic/x86" name="device/generic/x86" remote="aosp" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" remote="aosp" />
